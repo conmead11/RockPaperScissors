@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+
+.choice-button {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.choice-button.rock {
+    background-color: #685c5c;
+    color: white;
+}
+
+.choice-button.paper {
+    background-color: #d8d8d8;
+    color: rgb(0, 0, 0);
+}
+
+.choice-button.scissors {
+    background-color: #89969e;
+    color: white;
+}
+
+.choice-button:hover {
+    transform: scale(1.05);
+}
+
+.choice-button:active {
+    transform: scale(0.95);
+}
